@@ -1,0 +1,13 @@
+python test.py \
+--content_path ../data/content_test_small \
+--style_path ../data/style_test_small \
+--name AdaAttN_retrain \
+--model adaattn \
+--dataset_mode unaligned \
+--load_size 512 \
+--crop_size 512 \
+--image_encoder_path ./other/vgg_normalised.pth \
+--gpu_ids 0 \
+--skip_connection_3 \
+--shallow_layer  \
+--num_test 999999
